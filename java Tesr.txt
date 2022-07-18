@@ -1,0 +1,130 @@
+1. Variable Arguments (Varargs) in Java is a method that takes a variable number of arguments. Variable Arguments in Java simplifies the creation of methods that need to take a variable number of arguments.
+Syntax:
+public static void fun(int ... a) 
+{
+   
+} 
+
+2. A block in Java is a set of code enclosed within curly braces { } within any class, method, or constructor.
+
+3. comparing two objects by their hashcodes will give the result 20 times faster than comparing them using the equals() function.
+
+4. Being immutable automatically makes the String thread safe since they won't be changed when accessed from multiple threads.String pool is nothing but a storage area in Java heap where string literals stores. It is also known as String Intern Pool or String Constant Pool. It is just like object allocation. By default, it is empty and privately maintained by the Java String class.
+
+5.Character Constants are written by enclosing a character within a pair of single quotes. String Constants are written by enclosing a set of characters within a pair of double quotes.
+String literals can be arbitrarily long, such as "abcdefg". 
+Character literals almost always contain just a single character.Can a string be a character?
+A String containing a single character is not the same as a char.
+
+6.exception is an event that occurs during the execution of a program and disrupts the normal flow of the program's instructions. Bugs or errors that we don't want and restrict our program's normal execution of code are referred to as exceptions.
+there are two types
+build-in Exception-
+that are already available in Java libraries are referred to as built-in exception. These exceptions are able to define the error situation so that we can understand the reason of getting this error. It can be categorized into two broad categories, i.e., checked exceptions and unchecked exception.
+User defined Exception-Checked exceptions are called compile-time exceptions because these exceptions are checked at compile-time by the compiler. The compiler ensures whether the programmer handles the exception or not. The programmer should have to handle the exception; otherwise, the system has shown a compilation error.
+
+7.Advantages of exceptions are:
+Exceptions provide the means to separate the details of what to do when something out of the ordinary happens from the main logic of a program.
+Propagating Errors Up the Call Stack. Advantage.
+Grouping Error Types and Error Differentiation.
+
+8.Yes, we can declare a try-catch block within another try-catch block, this is called nested try-catch block.
+
+9.The throw keyword is used to create a custom error. The throw statement is used together with an exception type. There are many exception types available in Java: ArithmeticException , ClassNotFoundException , ArrayIndexOutOfBoundsException , SecurityException.
+
+10.No, we can not place any code after throw statement, it leads to compile time error Unreachable Statement.
+
+11.What is the finally block in Java?
+The finally block in java is used to put important codes such as clean up code e.g. closing the file or closing the connection. The finally block executes whether exception rise or not and whether exception handled or not. A finally contains all the crucial statements regardless of the exception occurs or not.
+
+12.An Error is a subclass of Throwable that indicates serious problems that a reasonable application should not try to catch. Most such errors are abnormal conditions. The ThreadDeath error, though a "normal" condition, is also a subclass of Error because most applications should not try to catch it.
+
+13.IS-A-Relation:The fundamental of IS-A is referring to inheritance, it means when inheritance is applied you can say IS-A applies. e.g.
+in the real-life world, SUVCar is a Car, the example as follows.
+
+Example of java class
+
+Public class SUVCar extends Car {
+   
+    run(){}
+}
+ class Car {
+   
+   start()  {}
+   stop()  {}
+
+HAS-A-Relation:
+he fundamental of HAS-A is referring to composition, it means when association (aggregation or composition) is applied, you can say HAS-A applies. e.g.
+
+Example of java class
+
+ public class Car {
+   
+   private Engine engine;
+    start()  {}
+}
+class Engine  {
+ 
+   putOil() {}
+   String getEngineNo() {}
+}
+here, we can say, Car has-a Engine, because Engine is composed inside the Car class.
+
+14.ava main() method is always static, so that compiler can call it without the creation of an object or before the creation of an object of the class. In any Java program, the main() method is the starting point from where compiler starts program execution.
+
+15.Yes, we can overload the main method in Java, but When we execute the class JVM starts execution with public static void main(String[] args) method.
+
+16.Java does not support “directly” nested methods. Many functional programming languages support method within method. 
+
+17.No. One cannot directly define method in methods in java. Except special conditions, like pre declared methods in inbuilt classes. The preferable method is define method in same class and ofcourse call it.
+
+18. Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake. A Class is like an object constructor, or a "blueprint" for creating objects.
+
+19.The Just-In-Time (JIT) compiler is a component of the Java™ Runtime Environment that improves the performance of Java applications at run time.
+
+20.Built in exception in java are.
+ArithmeticException.
+ArrayIndexOutOfBoundsException.
+ArrayStoreException.
+ClassCastException.
+StringIndexOutOfBounds.
+NullPointerException.
+NumberFormatException.
+UnsupportedOperationException.
+IllegalThreadStateException.
+IllegalStateException.
+
+21.To create a custom exception, we have to extend the java. lang. Exception class.
+
+22.Try
+    try: The try block contains a set of statements where an exception can occur.
+
+try
+{
+    
+}
+catch: The catch block is used to handle the uncertain condition of a try block. A try block is always followed by a catch block, which handles the exception that occurs in the associated try block.
+
+catch
+{
+   
+}
+
+throw: The throw keyword is used to transfer control from the try block to the catch block. 
+
+throws:The throws keyword is used for exception handling without try & catch block. It specifies the exceptions that a method can throw to the caller and does not handle itself.
+
+23.In java, String is a class . But we do not have to use new keyword to create an object of class String where as new is used for creating objects for other classes.
+
+24.By string literal : Java String literal is created by using double quotes. 
+For Example: String s=“JAVA”;
+By new keyword : Java String is created by using a keyword “new”. For example: String s=new String(“JAVA”);
+
+
+
+
+
+
+
+
+
+
